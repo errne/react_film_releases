@@ -6,16 +6,16 @@ class FilmList extends Component {
     const films = this.props.films.map((film, index) => {
       return (
         <Film key={index}
-        //id={film.Id}
         url = {film.url}
         name={film.name}
-        >
-        </Film>
+        />
       );
     });
     return (
       <Fragment>
+      <h1>Upcoming film releases for UK</h1>
       {films}
+      <a href="https://www.imdb.com/calendar/?region=gb">View more upcoming releases</a>
       </Fragment>
     );
   }
