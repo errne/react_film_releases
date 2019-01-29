@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import FilmList from '../components/FilmList';
 
+// Containers have state and hold data(Componenets display data)
+
 class FilmListContainer extends Component{
   constructor(props){
     super(props);
